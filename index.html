@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Link Jquery's CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-inner__title"><a class="scroll-home">NWG's Portfolio</a></div>
+            <ul class="header-inner__nav">
+                <li><a class="scroll-aboutme">About me</a></li>
+                <li><a class="scroll-skills">Skills</a></li>
+                <li><a class="scroll-timeline">Timeline</a></li>
+                <li><a class="scroll-project">Project</a></li>
+                <li><a class="scroll-contact">Contact</a></li>
+            </ul>
+            <div class="header-inner__nav--menu">
+                <img src="img/index/menu.svg" alt="nav-menu">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- intro page -->
+        <div class="intro-wrap">
+            <p class="intro-wrap__text page-start">
+                안녕하세요<br>
+                끝없이 발전하는 프론트엔드 개발자<br>
+                노원기 입니다
+            </p>
+        </div>
+        <!-- about_me page -->
+        <div id="about_me" class="aboutme-wrap">
+            <div class="main-wrap aboutme">
+                <h1 class="title aboutme__title">About me</h1>
+                <ul class="aboutme__list">
+                    <li class="aboutme__name">
+                        <p>
+                            <span>이름</span>
+                            노원기
+                        </p>
+                    </li>
+                    <li class="aboutme__birth">
+                        <p>
+                            <span>생년월일</span>
+                            01.05.24
+                        </p>
+                    </li>
+                    <li class="aboutme__sex">
+                        <p>
+                            <span>성별</span>
+                            남
+                        </p>
+                    </li>
+                    <li class="aboutme__address">
+                        <p>
+                            <span>주소지</span>
+                            서울특별시 노원구
+                        </p>
+                    </li>
+                    <li class="aboutme__phone" onclick="location.href='tel:010-2101-0986'">
+                        <p>
+                            <span>연락처</span>
+                            010-2101-0986
+                        </p>
+                    </li>
+                    <li class="aboutme__email" onclick="location.href='mailto:wonginoh@gmail.com'">
+                        <p>
+                            <span>이메일</span>
+                            wonginoh@gmail.com
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- skills page -->
+        <div class="skills-wrap">
+            <div class="main-wrap skills">
+                <h1 class="title skills__title">Skills</h1>
+                <h2 class="skills__sub-title">#Language</h2>
+                <!-- html -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_html" src="img/Skills/html.png" alt="html.png">
+                            </div>
+                            <p>HTML</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-80"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">80%</li>
+                </ul>
+                <!-- css -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_css" src="img/Skills/css.png" alt="css.png">
+                            </div>
+                            <p>CSS</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-80"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">80%</li>
+                </ul>
+                <!-- javaScript -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_js" src="img/Skills/javascript.png" alt="javascript.png">
+                            </div>
+                            <p>JavaScript</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-60"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">60%</li>
+                </ul>
+                <h2 class="skills__sub-title">#Front</h2>
+                <!-- Vue.js -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_vue" src="img/Skills/vue.png" alt="vue.png">
+                            </div>
+                            <p>Vue.js</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-40"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">40%</li>
+                </ul>
+                <h2 class="skills__sub-title">#Back</h2>
+                <!-- Node.js -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_node" src="img/Skills/node.png" alt="node.png">
+                            </div>
+                            <p>Node.js</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-30"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">30%</li>
+                </ul>
+                <h2 class="skills__sub-title">#DB</h2>
+                <!-- MySQL -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_mysql" src="img/Skills/mysql.png" alt="mysql.png">
+                            </div>
+                            <p>MySQL</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-50"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">50%</li>
+                </ul>
+                <h2 class="skills__sub-title">#Deployment</h2>
+                <!-- Heroku -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_heroku" src="img/Skills/heroku.png" alt="heroku.png">
+                            </div>
+                            <p>Heroku</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-60"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">60%</li>
+                </ul>
+                <!-- Firebase -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_firebase" src="img/Skills/firebase.png" alt="firebase.png">
+                            </div>
+                            <p>Firebase</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-30"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">30%</li>
+                </ul>
+                <h2 class="skills__sub-title">#Communication</h2>
+                <!-- Figma -->
+                <ul class="skills__wrap">
+                    <li class="skills__name">
+                        <div class="skills__name--box">
+                            <div class="skills__name--circle">
+                                <img class="img_figma" src="img/Skills/figma.png" alt="figma.png">
+                            </div>
+                            <p>Figma</p>
+                        </div>
+                    </li>
+                    <li class="skills__bar">
+                        <div class="skills__bar--back">
+                            <div class="skills__bar--front bar-80"></div>
+                        </div>
+                    </li>
+                    <li class="skills__text">80%</li>
+                </ul>
+            </div>
+        </div>
+        <!-- timeline page -->
+        <div class="timeline-wrap">
+            <div class="main-wrap timeline">
+                <h1 class="title timeline__title">Timeline</h1>
+                <div class="timeline-box">
+                    <div class="timeline__date">
+                        <p class="timeline__date--text">2017.03</p>
+                        <p class="timeline__date--text">2020.06</p>
+                        <p class="timeline__date--text">2022.02</p>
+                        <p class="timeline__date--text">2022.08</p>
+                    </div>
+                    <div class="timeline__contents--wrap">
+                        <div class="timeline__contents">
+                            <h3>경기기계공업고등학교 입학</h3>
+                            <p>컴퓨터전자과 (2017.03 ~ 2020.02)</p>
+                        </div>
+                        <div class="timeline__contents">
+                            <h3>군 입대</h3>
+                            <p>공군 정보체계관리병 만기전역 (2020.06 ~ 2022.03)</p>
+                        </div>
+                        <div class="timeline__contents">
+                            <h3>스마트_뷰(Vue) 활용 프론트엔드 웹개발자 양성과정 수강</h3>
+                            <p>노원 그린컴퓨터아카데미 (2022.02 ~ 2022.08)</p>
+                        </div>
+                        <div class="timeline__contents">
+                            <h3>스마트_뷰(Vue) 활용 프론트엔드 웹개발자 양성과정 수료</h3>
+                            <p>노원 그린컴퓨터아카데미 (2022.02 ~ 2022.08)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- project page -->
+        <div class="project-wrap">
+            <div class="main-wrap project">
+                <h1 class="title project__title">Project</h1>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Portfolio -->
+                        <div class="swiper-slide">
+                            <div class="project__contents">
+                                <div class="project__contents--img">
+                                    <img class="project_img" src="img/Project/portfolio.png" alt="portfolio.png">
+                                </div>
+                                <div class="project__contents--text">
+                                    <h4>개인 포트폴리오</h4>
+                                    <p>
+                                        <span>프론트엔드 개발자 포트폴리오 웹사이트 개발</span>
+                                        제 자신을 소개하기 위해 만들었습니다.<br>
+                                        기획부터 개발, 서버 연결까지 직접 하였습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project__link">
+                                <div>
+                                    <a href="https://github.com/Nohwongi/Portfolio" target="_blank"><img class="project_img_github" src="img/index/github.png" alt="github.png"></a>
+                                    <a href="http://wonginoh.dothome.co.kr/" target="_blank"><img class="project_img_homepage" src="img/index/home.png" alt="home.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- NightSeomun -->
+                        <div class="swiper-slide">
+                            <div class="project__contents">
+                                <div class="project__contents--img">
+                                    <img class="project_img" src="img/Project/nightseomun.png" alt="nightseomun.png">
+                                </div>
+                                <div class="project__contents--text">
+                                    <h4>서문시장야시장</h4>
+                                    <p>
+                                        <span>서문시장야시장 웹사이트 리뉴얼</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project__link">
+                                <div>
+                                    <a href="https://github.com/Nohwongi/nightSeomun_index" target="_blank"><img class="project_img_github" src="img/index/github.png" alt="github.png"></a>
+                                    <a href="http://projectwongi.dothome.co.kr/nightseomun/main.html" target="_blank"><img class="project_img_homepage" src="img/index/home.png" alt="home.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- NoWon Cultural Center -->
+                        <div class="swiper-slide">
+                            <div class="project__contents">
+                                <div class="project__contents--img">
+                                    <img class="project_img" src="img/Project/nwcc.png" alt="nwcc.png">
+                                </div>
+                                <div class="project__contents--text">
+                                    <h4>노원문화원</h4>
+                                    <p>
+                                        <span>노원 문화원 웹사이트 리뉴얼</span>
+                                        프론트엔드 웹 개발자 양성과정 수강 중 팀 프로젝트로 제작하였습니다.<br>
+                                        기존 노원문화원 홈페이지의 단점들을 보완하고 디자인을 변경하여 리뉴얼 하였습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project__link">
+                                <div>
+                                    <a href="https://github.com/Nohwongi/NWCC" target="_blank"><img class="project_img_github" src="img/index/github.png" alt="github.png"></a>
+                                    <a href="https://project-nwcc.herokuapp.com/" target="_blank"><img class="project_img_homepage" src="img/index/home.png" alt="home.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shouse Garden -->
+                        <div class="swiper-slide">
+                            <div class="project__contents">
+                                <div class="project__contents--img">
+                                    <img class="project_img" src="img/Project/shouse_garden.png" alt="shouse_garden.png">
+                                </div>
+                                <div class="project__contents--text">
+                                    <h4>싱그러운 집</h4>
+                                    <p>
+                                        <span>싱그러운 집 웹 클론</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project__link">
+                                <div>
+                                    <a href="https://github.com/Nohwongi/shouse_garden" target="_blank"><img class="project_img_github" src="img/index/github.png" alt="github.png"></a>
+                                    <a href="http://projectwongi.dothome.co.kr/shouse_garden/index.html" target="_blank"><img class="project_img_homepage" src="img/index/home.png" alt="home.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pollexzone -->
+                        <div class="swiper-slide">
+                            <div class="project__contents">
+                                <div class="project__contents--img">
+                                    <img class="project_img" src="img/Project/pollexzone.png" alt="pollexzone.png">
+                                </div>
+                                <div class="project__contents--text">
+                                    <h4>폴렉스존</h4>
+                                    <p>
+                                        <span>폴렉스존 웹 클론</span>
+                                    </p> 
+                                </div>
+                            </div>
+                            <div class="project__link">
+                                <div>
+                                    <a href="https://github.com/Nohwongi/pollexzone" target="_blank"><img class="project_img_github" src="img/index/github.png" alt="github.png"></a>
+                                    <a href="http://projectwongi.dothome.co.kr/pollexzone/main.html" target="_blank"><img class="project_img_homepage" src="img/index/home.png" alt="home.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Daejeon Culture and Arts Foundation -->
+                        <div class="swiper-slide">
+                            <div class="project__contents">
+                                <div class="project__contents--img">
+                                    <img class="project_img" src="img/Project/dcaf.png" alt="dcaf.png">
+                                </div>
+                                <div class="project__contents--text">
+                                    <h4>대전문화재단</h4>
+                                    <p>
+                                        <span>대전문화재단 웹 클론</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project__link">
+                                <div>
+                                    <a href="https://github.com/Nohwongi/dcaf" target="_blank"><img class="project_img_github" src="img/index/github.png" alt="github.png"></a>
+                                    <a href="http://projectwongi.dothome.co.kr/dcaf/index.html" target="_blank"><img class="project_img_homepage" src="img/index/home.png" alt="home.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- contact page -->
+        <div class="contact-wrap">
+            <div class="main-wrap contact">
+                <h1 class="title contact__title">Contact</h1>
+                <P class="contact__text">
+                    <span>“안녕하세요, 프론트엔드 개발자 노원기입니다.”</span>
+                    <br>
+                    제가 생각하는 이상적인 개발자는 사용자가 원하는 것을 정확하게 알아내어 충족시켜주고,<br>
+                    사용자가 불편함을 느끼지 않게 하는 것이라고 생각합니다.<br>
+                    <br>
+                    저 또한 이런 개발자가 되기 위해 항상 사용자의 입장에서 생각하며 개발하고 있습니다.<br>
+                    <br>
+                    아직 신입 개발자라 부족한 점이 많겠지만 끊임없이 노력하여 발전해 나가겠습니다.
+                </P>
+                <div class="contact__links">
+                    <div class="contact__links--title">Links</div>
+                    <ul class="contact__links--list">
+                        <li class="contact__links--icon">
+                            <a href="https://github.com/Nohwongi"><img class="img_github" src="img/index/github.png" alt="github.png"></a>
+                        </li>
+                        <li class="contact__links--icon">
+                            <a href="https://open.kakao.com/o/sTdy9Zve"><img class="img_kakaotalk" src="img/index/kakaotalk.png" alt="kakaotalk.png"></a>
+                        </li>
+                        <li class="contact__links--icon">
+                            <a href="tel:010-2101-0986"><img class="img_phone" src="img/index/phone.png" alt="phone.png"></a>
+                        </li>
+                        <li class="contact__links--icon">
+                            <a href="mailto:wonginoh@gmail.com"><img class="img_email" src="img/index/envelope-fill.svg" alt="email.svg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © 2022. Noh Won Gi. All rights reserved.
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
