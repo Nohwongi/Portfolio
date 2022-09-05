@@ -630,6 +630,10 @@ footer {
         width: 100%;
     }
 
+    .header-inner__nav a {
+        color: #000;
+    }
+
     /************ main ************/
     .main-wrap {
         width: 100%;
