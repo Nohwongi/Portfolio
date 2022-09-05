@@ -27,7 +27,6 @@ header {
     font-size: 24px;
     font-weight: bold;    
     padding: 5px 0;
-    cursor: pointer;
 }
 
 .header-inner__nav {
@@ -39,7 +38,6 @@ header {
     padding: 10px 16px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .down a {
@@ -56,11 +54,36 @@ header {
     text-align: center;
     cursor: pointer;
     background-color: #fff;
+    border-radius: 3px;
 }
 
 .header-inner__nav--menu>img {
     width: 30px;
     height: 30px;
+}
+
+.nav_list {
+    display: none;
+    overflow: hidden;
+    padding: 10px 0 10px 20px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    float: left;
+    background-color: #fff;
+    width: 100%;
+    transition:all 300ms linear;
+}
+
+.nav_list a {
+    display: block;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #878787;
+}
+
+.nav_list li:hover {
+    cursor: pointer;
 }
 
 
@@ -160,11 +183,9 @@ header {
 }
 .aboutme__phone {
     background: url(../img/Aboutme/telephone-fill.svg) no-repeat 0 0 / 32px 32px;
-    cursor: pointer;
 }
 .aboutme__email {
     background: url(../img/Aboutme/email.svg) no-repeat 0 0 / 32px 32px;
-    cursor: pointer;
 }
 
 
@@ -426,6 +447,8 @@ header {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
+    padding-right: 7px;
+    box-sizing: border-box;
 
     /* Center slide text vertically */
     display: -webkit-box;

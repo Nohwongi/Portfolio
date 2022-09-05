@@ -23,10 +23,17 @@
                 <li><a class="scroll-project">Project</a></li>
                 <li><a class="scroll-contact">Contact</a></li>
             </ul>
-            <div class="header-inner__nav--menu">
+            <div class="header-inner__nav--menu" onclick="OpenCloseNav()">
                 <img src="img/index/menu.svg" alt="nav-menu">
             </div>
         </div>
+        <ul id="nav_list" class="nav_list">
+            <li><a class="scroll-aboutme">About me</a></li>
+            <li><a class="scroll-skills">Skills</a></li>
+            <li><a class="scroll-timeline">Timeline</a></li>
+            <li><a class="scroll-project">Project</a></li>
+            <li><a class="scroll-contact">Contact</a></li>
+        </ul>
     </header>
     <main>
         <!-- intro page -->
@@ -283,7 +290,7 @@
             <div class="main-wrap project">
                 <h1 class="title project__title">Project</h1>
                 <!-- Swiper -->
-                <div class="swiper mySwiper">
+                <div id="swiper" class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <!-- Portfolio -->
                         <div class="swiper-slide">
@@ -463,6 +470,28 @@
                 clickable: true,
             },
         });
+
+        var NowWidth = window.innerWidth
+
+        if (NowWidth <= 1000 && NowWidth > 700) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        } else if (NowWidth <= 700) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
     </script>
 </body>
 </html>
